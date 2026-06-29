@@ -9,110 +9,78 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- =========================
          SEO
     ========================== -->
 
-    <title>
-        NovaAI Workspace | AI-Powered Productivity Platform
-    </title>
+    <title>NovaAI Workspace | AI-Powered Productivity Platform</title>
 
-    <meta
-        name="description"
-        content="NovaAI Workspace is a modern AI-powered productivity platform designed to help teams collaborate smarter, automate workflows, and manage projects efficiently.">
+    <meta name="description" content="NovaAI Workspace is a modern AI-powered productivity platform designed to help teams collaborate smarter, automate workflows, and manage projects efficiently.">
+    <meta name="keywords" content="AI Workspace, AI SaaS, Productivity, Project Management, Team Collaboration, Automation">
+    <meta name="author" content="Syeda Gul Andam Ali Kazmi">
+    <meta name="robots" content="index,follow">
 
-    <meta
-        name="keywords"
-        content="AI Workspace, AI SaaS, Productivity, Project Management, Team Collaboration, Automation">
-
-    <meta
-        name="author"
-        content="Syeda Gul Andam Ali Kazmi">
-
-    <meta
-        name="robots"
-        content="index,follow">
-
-    <link
-        rel="canonical"
-        href="https://github.com/gul310/NovaAI-Workspace">
+    <link rel="canonical" href="https://github.com/gul310/NovaAI-Workspace">
 
     <!-- =========================
          Open Graph
     ========================== -->
 
-    <meta
-        property="og:title"
-        content="NovaAI Workspace">
-
-    <meta
-        property="og:description"
-        content="Modern AI Workspace for Productivity and Collaboration">
-
-    <meta
-        property="og:type"
-        content="website">
-
-    <meta
-        property="og:image"
-        content="assets/images/og-image.jpg">
+    <meta property="og:title" content="NovaAI Workspace">
+    <meta property="og:description" content="Modern AI Workspace for Productivity and Collaboration">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://github.com/gul310/NovaAI-Workspace">
 
     <!-- =========================
-         Twitter
+         Twitter Card
     ========================== -->
 
-    <meta
-        name="twitter:card"
-        content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NovaAI Workspace">
+    <meta name="twitter:description" content="AI Powered Productivity Platform">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
 
-    <meta
-        name="twitter:title"
-        content="NovaAI Workspace">
+    <!-- =========================
+         JSON-LD Schema
+    ========================== -->
 
-    <meta
-        name="twitter:description"
-        content="AI Powered Productivity Platform">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "NovaAI Workspace",
+            "description": "AI-powered productivity platform for modern teams",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "All",
+            "url": "https://github.com/gul310/NovaAI-Workspace"
+        }
+    </script>
 
     <!-- =========================
          Google Fonts
     ========================== -->
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- =========================
          Styles
     ========================== -->
 
-    <link
-        rel="stylesheet"
-        href="css/style.css">
-
-    <link
-        rel="stylesheet"
-        href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- =========================
          Favicon
     ========================== -->
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="assets/favicon/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
 </head>
 
@@ -122,360 +90,184 @@
          Skip Link
     ========================== -->
 
-    <a
-        href="#main-content"
-        class="skip-link">
-        Skip to Content
-    </a>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
 
     <!-- =========================
          Announcement Bar
     ========================== -->
 
-    <section class="announcement-bar">
-
+    <section class="announcement-bar" role="banner" aria-label="Announcement">
         <div class="container">
-
             <p>
-
                 🚀 New Feature Released —
-                AI Workspace Automation is now available.
-
+                <a href="services.html" class="announcement-link">AI Workspace Automation</a>
+                is now available. Start your free trial today!
             </p>
-
         </div>
-
     </section>
 
     <!-- =========================
-         Header
+         Header / Navigation
     ========================== -->
 
-    <header class="header">
-
+    <header class="header" role="banner">
         <div class="container">
-
-            <nav
-                class="navbar">
+            <nav class="navbar" role="navigation" aria-label="Main Navigation">
 
                 <!-- Logo -->
-
-                <a
-                    href="index.html"
-                    class="logo">
-
+                <a href="index.html" class="logo" aria-label="NovaAI Workspace Home">
                     Nova<span>AI</span>
-
                 </a>
 
-                <!-- Navigation -->
-
-                <ul class="nav-menu">
-
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
                     <li>
-
-                        <a
-                            href="index.html"
-                            class="active">
-
-                            Home
-
-                        </a>
-
+                        <a href="index.html" class="active">Home</a>
                     </li>
-
                     <li>
-
-                        <a href="about.html">
-
-                            About
-
-                        </a>
-
+                        <a href="about.html">About</a>
                     </li>
-
                     <li>
-
-                        <a href="services.html">
-
-                            Solutions
-
-                        </a>
-
+                        <a href="services.html">Solutions</a>
                     </li>
-
                     <li>
-
-                        <a href="pricing.html">
-
-                            Pricing
-
-                        </a>
-
+                        <a href="pricing.html">Pricing</a>
                     </li>
-
                     <li>
-
-                        <a href="contact.html">
-
-                            Contact
-
-                        </a>
-
+                        <a href="contact.html">Contact</a>
                     </li>
-
                 </ul>
 
                 <!-- Right Actions -->
-
                 <div class="nav-actions">
-
-                    <button
-                        id="theme-toggle"
-                        aria-label="Toggle Dark Mode">
-
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle">
                         🌙
-
                     </button>
-
-                    <a
-                        href="contact.html"
-                        class="btn-primary">
-
-                        Get Started
-
-                    </a>
-
+                    <a href="contact.html" class="btn-primary btn-small">Get Started</a>
                 </div>
 
-                <!-- Mobile Menu -->
-
-                <button
-                    class="hamburger"
-                    aria-label="Open Navigation">
-
+                <!-- Mobile Menu Button -->
+                <button class="hamburger" id="hamburgerMenu" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle Navigation">
                     <span></span>
                     <span></span>
                     <span></span>
-
                 </button>
 
             </nav>
-
         </div>
-
     </header>
 
     <!-- =========================
-         Main Content Starts
+         MAIN CONTENT
     ========================== -->
 
     <main id="main-content">
-                <!-- =========================================
-                    HERO SECTION
+
+        <!-- =========================================
+             HERO SECTION
         ========================================== -->
 
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
+
+            <!-- Background Effects -->
+            <div class="hero-background">
+                <div class="blur-circle blur-one"></div>
+                <div class="blur-circle blur-two"></div>
+                <div class="blur-circle blur-three"></div>
+                <div class="grid-overlay"></div>
+            </div>
 
             <div class="container hero-container">
 
                 <!-- Left Content -->
-
                 <div class="hero-content">
 
                     <span class="hero-badge">
-
                         ✨ AI Powered Productivity Platform
-
                     </span>
 
-                    <h1>
-
+                    <h1 id="hero-title">
                         Build Faster.
                         <br>
-
                         Collaborate Smarter.
                         <br>
-
-                        Work With AI.
-
+                        Work With <span>AI</span>.
                     </h1>
 
                     <p>
-
-                        NovaAI Workspace helps modern teams manage
-                        projects, automate repetitive tasks,
-                        collaborate in real time and boost productivity
-                        using Artificial Intelligence.
-
+                        NovaAI Workspace helps modern teams manage projects,
+                        automate repetitive tasks, collaborate in real time,
+                        and boost productivity using Artificial Intelligence.
                     </p>
 
                     <div class="hero-buttons">
-
-                        <a
-                            href="pricing.html"
-                            class="btn-primary">
-
-                            Start Free
-
+                        <a href="pricing.html" class="btn-primary btn-large">
+                            Start Free Trial
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
                         </a>
-
-                        <a
-                            href="about.html"
-                            class="btn-secondary">
-
+                        <a href="about.html" class="btn-secondary btn-large">
                             Explore Platform
-
                         </a>
-
                     </div>
 
-                    <!-- Statistics -->
-
+                    <!-- Hero Statistics -->
                     <div class="hero-stats">
-
                         <div class="stat-item">
-
-                            <h3>
-
-                                10K+
-
-                            </h3>
-
-                            <p>
-
-                                Active Users
-
-                            </p>
-
+                            <h3 data-count="10000">10K+</h3>
+                            <p>Active Users</p>
                         </div>
-
                         <div class="stat-item">
-
-                            <h3>
-
-                                150+
-
-                            </h3>
-
-                            <p>
-
-                                Companies
-
-                            </p>
-
+                            <h3 data-count="150">150+</h3>
+                            <p>Companies</p>
                         </div>
-
                         <div class="stat-item">
-
-                            <h3>
-
-                                98%
-
-                            </h3>
-
-                            <p>
-
-                                Client Satisfaction
-
-                            </p>
-
+                            <h3 data-count="98">98%</h3>
+                            <p>Client Satisfaction</p>
                         </div>
-
                     </div>
 
                 </div>
 
                 <!-- Right Dashboard -->
-
                 <div class="hero-image">
 
-                    <div class="dashboard-card">
-
+                    <div class="dashboard-card glass-card">
                         <div class="dashboard-header">
-
                             <div class="dashboard-title">
-
+                                <span class="dot"></span>
                                 AI Workspace
-
                             </div>
-
-                            <span class="online">
-
-                                ● Online
-
-                            </span>
-
+                            <span class="online-status">● Online</span>
                         </div>
 
                         <div class="dashboard-body">
-
                             <div class="task-card">
-
-                                <span>
-
-                                    AI Project Planning
-
-                                </span>
-
-                                <strong>
-
-                                    96%
-
-                                </strong>
-
+                                <span>AI Project Planning</span>
+                                <strong>96%</strong>
                             </div>
-
                             <div class="task-card">
-
-                                <span>
-
-                                    Team Collaboration
-
-                                </span>
-
-                                <strong>
-
-                                    Active
-
-                                </strong>
-
+                                <span>Team Collaboration</span>
+                                <strong class="active-status">Active</strong>
                             </div>
-
                             <div class="task-card">
-
-                                <span>
-
-                                    Smart Automation
-
-                                </span>
-
-                                <strong>
-
-                                    Running
-
-                                </strong>
-
+                                <span>Smart Automation</span>
+                                <strong class="running-status">Running</strong>
                             </div>
-
                             <div class="task-card">
-
-                                <span>
-
-                                    Weekly Analytics
-
-                                </span>
-
-                                <strong>
-
-                                    +37%
-
-                                </strong>
-
+                                <span>Weekly Analytics</span>
+                                <strong class="growth">+37%</strong>
                             </div>
-
                         </div>
 
+                        <!-- Floating Cards -->
+                        <div class="floating-card float-1">
+                            📈 24% faster
+                        </div>
+                        <div class="floating-card float-2">
+                            ⚡ 8x speed
+                        </div>
                     </div>
 
                 </div>
@@ -483,1023 +275,453 @@
             </div>
 
         </section>
-
-
 
         <!-- =========================================
-                    TRUSTED BY
+             TRUSTED BY
         ========================================== -->
 
-        <section class="trusted">
-
+        <section class="trusted" aria-label="Trusted by leading companies">
             <div class="container">
-
-                <p class="trusted-title">
-
-                    Trusted by innovative teams worldwide
-
-                </p>
-
+                <p class="trusted-title">Trusted by innovative teams worldwide</p>
                 <div class="trusted-grid">
-
-                    <div class="brand-card">
-
-                        NOVA TECH
-
-                    </div>
-
-                    <div class="brand-card">
-
-                        CLOUDIFY
-
-                    </div>
-
-                    <div class="brand-card">
-
-                        AI HUB
-
-                    </div>
-
-                    <div class="brand-card">
-
-                        NEXTFLOW
-
-                    </div>
-
-                    <div class="brand-card">
-
-                        WORKSYNC
-
-                    </div>
-
+                    <div class="brand-card">NOVA TECH</div>
+                    <div class="brand-card">CLOUDIFY</div>
+                    <div class="brand-card">AI HUB</div>
+                    <div class="brand-card">NEXTFLOW</div>
+                    <div class="brand-card">WORKSYNC</div>
                 </div>
-
             </div>
-
         </section>
-                <!-- =========================================
-                    FEATURES SECTION
+
+        <!-- =========================================
+             FEATURES SECTION
         ========================================== -->
 
-        <section class="features">
-
+        <section class="features" aria-labelledby="features-title">
             <div class="container">
 
                 <div class="section-header">
-
-                    <span class="section-badge">
-
-                        WHY CHOOSE US
-
-                    </span>
-
-                    <h2>
-
+                    <span class="section-badge">WHY CHOOSE US</span>
+                    <h2 id="features-title">
                         Everything You Need
                         <br>
-                        In One AI Workspace
-
+                        In One <span>AI Workspace</span>
                     </h2>
-
                     <p>
-
                         Powerful tools designed to simplify collaboration,
                         automate workflows, improve productivity and help
                         your team achieve more every day.
-
                     </p>
-
                 </div>
 
                 <div class="features-grid">
 
                     <!-- Card 1 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            🚀
-
-                        </div>
-
-                        <h3>
-
-                            Smart Automation
-
-                        </h3>
-
-                        <p>
-
-                            Automate repetitive work using intelligent
-                            AI workflows and save valuable time.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Smart Automation</h3>
+                        <p>Automate repetitive work using intelligent AI workflows and save valuable time.</p>
                     </article>
 
                     <!-- Card 2 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            📊
-
-                        </div>
-
-                        <h3>
-
-                            Live Analytics
-
-                        </h3>
-
-                        <p>
-
-                            Monitor project performance through
-                            beautiful real-time dashboards.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Live Analytics</h3>
+                        <p>Monitor project performance through beautiful real-time dashboards.</p>
                     </article>
 
                     <!-- Card 3 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            🤝
-
-                        </div>
-
-                        <h3>
-
-                            Team Collaboration
-
-                        </h3>
-
-                        <p>
-
-                            Communicate with teammates and work
-                            together in one centralized workspace.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Team Collaboration</h3>
+                        <p>Communicate with teammates and work together in one centralized workspace.</p>
                     </article>
 
                     <!-- Card 4 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            🔒
-
-                        </div>
-
-                        <h3>
-
-                            Enterprise Security
-
-                        </h3>
-
-                        <p>
-
-                            Bank-level encryption keeps your
-                            projects and business data secure.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Enterprise Security</h3>
+                        <p>Bank-level encryption keeps your projects and business data secure.</p>
                     </article>
 
                     <!-- Card 5 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            ⚡
-
-                        </div>
-
-                        <h3>
-
-                            Lightning Performance
-
-                        </h3>
-
-                        <p>
-
-                            Optimized architecture delivers
-                            smooth performance across devices.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Performance</h3>
+                        <p>Optimized architecture delivers smooth performance across devices.</p>
                     </article>
 
                     <!-- Card 6 -->
-
-                    <article class="feature-card">
-
-                        <div class="feature-icon">
-
-                            ☁️
-
-                        </div>
-
-                        <h3>
-
-                            Cloud Workspace
-
-                        </h3>
-
-                        <p>
-
-                            Access your projects anywhere
-                            from any device securely.
-
-                        </p>
-
+                    <article class="feature-card glass-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud Workspace</h3>
+                        <p>Access your projects anywhere from any device securely.</p>
                     </article>
 
                 </div>
 
             </div>
-
         </section>
 
-
-
         <!-- =========================================
-                    DASHBOARD PREVIEW
+             DASHBOARD PREVIEW
         ========================================== -->
 
-        <section class="dashboard-preview">
-
+        <section class="dashboard-preview" aria-labelledby="dashboard-title">
             <div class="container dashboard-grid">
 
-                <!-- Left -->
-
+                <!-- Left Content -->
                 <div class="dashboard-content">
-
-                    <span class="section-badge">
-
-                        PRODUCTIVITY
-
-                    </span>
-
-                    <h2>
-
+                    <span class="section-badge">PRODUCTIVITY</span>
+                    <h2 id="dashboard-title">
                         Work Faster
-                        With AI Assistance
-
+                        With <span>AI Assistance</span>
                     </h2>
-
                     <p>
-
-                        NovaAI Workspace combines artificial
-                        intelligence, project management,
-                        collaboration and reporting into one
+                        NovaAI Workspace combines artificial intelligence,
+                        project management, collaboration and reporting into one
                         modern dashboard.
-
                     </p>
 
                     <ul class="dashboard-list">
-
-                        <li>
-
-                            ✔ AI Task Suggestions
-
-                        </li>
-
-                        <li>
-
-                            ✔ Team Workspace
-
-                        </li>
-
-                        <li>
-
-                            ✔ Smart Notifications
-
-                        </li>
-
-                        <li>
-
-                            ✔ Live Reports
-
-                        </li>
-
-                        <li>
-
-                            ✔ Cloud Synchronization
-
-                        </li>
-
+                        <li>✔ AI Task Suggestions</li>
+                        <li>✔ Team Workspace</li>
+                        <li>✔ Smart Notifications</li>
+                        <li>✔ Live Reports</li>
+                        <li>✔ Cloud Synchronization</li>
                     </ul>
 
-                    <a
-                        href="services.html"
-                        class="btn-primary">
-
-                        Explore Features
-
-                    </a>
-
+                    <a href="services.html" class="btn-primary">Explore Features</a>
                 </div>
 
-                <!-- Right -->
-
-                <div class="dashboard-preview-card">
-
+                <!-- Right Preview Card -->
+                <div class="dashboard-preview-card glass-card">
                     <div class="preview-top">
-
-                        <h3>
-
-                            Workspace Analytics
-
-                        </h3>
-
+                        <h3>Workspace Analytics</h3>
                     </div>
-
                     <div class="analytics">
-
                         <div class="analytics-item">
-
-                            <span>
-
-                                Productivity
-
-                            </span>
-
-                            <strong>
-
-                                91%
-
-                            </strong>
-
+                            <span>Productivity</span>
+                            <strong>91%</strong>
                         </div>
-
                         <div class="analytics-item">
-
-                            <span>
-
-                                Completed Tasks
-
-                            </span>
-
-                            <strong>
-
-                                1,284
-
-                            </strong>
-
+                            <span>Completed Tasks</span>
+                            <strong>1,284</strong>
                         </div>
-
                         <div class="analytics-item">
-
-                            <span>
-
-                                AI Suggestions
-
-                            </span>
-
-                            <strong>
-
-                                356
-
-                            </strong>
-
+                            <span>AI Suggestions</span>
+                            <strong>356</strong>
                         </div>
-
                         <div class="analytics-item">
-
-                            <span>
-
-                                Active Teams
-
-                            </span>
-
-                            <strong>
-
-                                120
-
-                            </strong>
-
+                            <span>Active Teams</span>
+                            <strong>120</strong>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
-
         </section>
-                <!-- =========================================
-                    STATISTICS
+
+        <!-- =========================================
+             STATISTICS - FIXED VERSION
         ========================================== -->
 
-        <section class="statistics">
-
+        <section class="statistics" aria-labelledby="stats-title">
             <div class="container">
 
                 <div class="section-header">
-
-                    <span class="section-badge">
-                        OUR IMPACT
-                    </span>
-
-                    <h2>
-                        Trusted By Teams Around The World
+                    <span class="section-badge">OUR IMPACT</span>
+                    <h2 id="stats-title">
+                        Trusted By Teams <span>Around The World</span>
                     </h2>
-
                     <p>
                         Thousands of professionals use NovaAI Workspace every
                         day to improve collaboration and productivity.
                     </p>
-
                 </div>
 
                 <div class="stats-grid">
 
                     <div class="stats-card">
-
-                        <h2>10K+</h2>
-
+                        <h2 data-count="10000">0</h2>
                         <p>Active Users</p>
-
                     </div>
 
                     <div class="stats-card">
-
-                        <h2>150+</h2>
-
+                        <h2 data-count="150">0</h2>
                         <p>Global Companies</p>
-
                     </div>
 
                     <div class="stats-card">
-
-                        <h2>2M+</h2>
-
+                        <h2 data-count="2000000">0</h2>
                         <p>Tasks Completed</p>
-
                     </div>
 
                     <div class="stats-card">
-
-                        <h2>99%</h2>
-
+                        <h2 data-count="99">0</h2>
                         <p>Customer Satisfaction</p>
-
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
-
-
         <!-- =========================================
-                    WORKFLOW
+             WORKFLOW
         ========================================== -->
 
-        <section class="workflow">
-
+        <section class="workflow" aria-labelledby="workflow-title">
             <div class="container">
 
                 <div class="section-header">
-
-                    <span class="section-badge">
-
-                        HOW IT WORKS
-
-                    </span>
-
-                    <h2>
-
-                        Get Started In Three Simple Steps
-
+                    <span class="section-badge">HOW IT WORKS</span>
+                    <h2 id="workflow-title">
+                        Get Started In <span>Three Simple Steps</span>
                     </h2>
-
                 </div>
 
                 <div class="workflow-grid">
 
-                    <article class="workflow-card">
-
-                        <div class="workflow-number">
-
-                            01
-
-                        </div>
-
-                        <h3>
-
-                            Create Workspace
-
-                        </h3>
-
-                        <p>
-
-                            Create your secure workspace within seconds.
-
-                        </p>
-
+                    <article class="workflow-card glass-card">
+                        <div class="workflow-number">01</div>
+                        <h3>Create Workspace</h3>
+                        <p>Create your secure workspace within seconds.</p>
                     </article>
 
-                    <article class="workflow-card">
-
-                        <div class="workflow-number">
-
-                            02
-
-                        </div>
-
-                        <h3>
-
-                            Invite Team
-
-                        </h3>
-
-                        <p>
-
-                            Collaborate with your team using shared projects.
-
-                        </p>
-
+                    <article class="workflow-card glass-card">
+                        <div class="workflow-number">02</div>
+                        <h3>Invite Team</h3>
+                        <p>Collaborate with your team using shared projects.</p>
                     </article>
 
-                    <article class="workflow-card">
-
-                        <div class="workflow-number">
-
-                            03
-
-                        </div>
-
-                        <h3>
-
-                            Boost Productivity
-
-                        </h3>
-
-                        <p>
-
-                            Let AI automate repetitive work while you focus
-                            on important decisions.
-
-                        </p>
-
+                    <article class="workflow-card glass-card">
+                        <div class="workflow-number">03</div>
+                        <h3>Boost Productivity</h3>
+                        <p>Let AI automate repetitive work while you focus on important decisions.</p>
                     </article>
 
                 </div>
 
             </div>
-
         </section>
 
-
-
         <!-- =========================================
-                    TESTIMONIALS
+             TESTIMONIALS
         ========================================== -->
 
-        <section class="testimonials">
-
+        <section class="testimonials" aria-labelledby="testimonials-title">
             <div class="container">
 
                 <div class="section-header">
-
-                    <span class="section-badge">
-
-                        TESTIMONIALS
-
-                    </span>
-
-                    <h2>
-
-                        Loved By Professionals
-
+                    <span class="section-badge">TESTIMONIALS</span>
+                    <h2 id="testimonials-title">
+                        Loved By <span>Professionals</span>
                     </h2>
-
                 </div>
 
                 <div class="testimonial-grid">
 
-                    <article class="testimonial-card">
-
+                    <article class="testimonial-card glass-card">
                         <p>
-
                             "NovaAI completely transformed our workflow.
                             Everything is faster, cleaner and easier."
-
                         </p>
-
                         <div class="client">
-
-                            <strong>
-
-                                Sarah Johnson
-
-                            </strong>
-
-                            <span>
-
-                                Product Manager
-
-                            </span>
-
+                            <strong>Sarah Johnson</strong>
+                            <span>Product Manager</span>
                         </div>
-
                     </article>
 
-                    <article class="testimonial-card">
-
+                    <article class="testimonial-card glass-card">
                         <p>
-
                             "The AI automation saves our company several
                             hours every single day."
-
                         </p>
-
                         <div class="client">
-
-                            <strong>
-
-                                David Wilson
-
-                            </strong>
-
-                            <span>
-
-                                Startup Founder
-
-                            </span>
-
+                            <strong>David Wilson</strong>
+                            <span>Startup Founder</span>
                         </div>
-
                     </article>
 
-                    <article class="testimonial-card">
-
+                    <article class="testimonial-card glass-card">
                         <p>
-
                             "Beautiful interface, excellent collaboration
                             tools and amazing analytics."
-
                         </p>
-
                         <div class="client">
-
-                            <strong>
-
-                                Emma Brown
-
-                            </strong>
-
-                            <span>
-
-                                Team Lead
-
-                            </span>
-
+                            <strong>Emma Brown</strong>
+                            <span>Team Lead</span>
                         </div>
-
                     </article>
 
                 </div>
 
             </div>
-
         </section>
-                <!-- =========================================
-                    FAQ SECTION
+
+        <!-- =========================================
+             FAQ SECTION
         ========================================== -->
 
-        <section class="faq">
-
+        <section class="faq" aria-labelledby="faq-title">
             <div class="container">
 
                 <div class="section-header">
-
-                    <span class="section-badge">
-                        FAQ
-                    </span>
-
-                    <h2>
-                        Frequently Asked Questions
+                    <span class="section-badge">FAQ</span>
+                    <h2 id="faq-title">
+                        Frequently Asked <span>Questions</span>
                     </h2>
-
                 </div>
 
                 <div class="faq-container">
 
                     <div class="faq-item">
-
-                        <button class="faq-question">
-
+                        <button class="faq-question" aria-expanded="false">
                             What is NovaAI Workspace?
-
+                            <span class="faq-icon">+</span>
                         </button>
-
                         <div class="faq-answer">
-
                             <p>
-
                                 NovaAI Workspace is an AI-powered productivity
                                 platform that helps teams collaborate,
                                 automate tasks, and manage projects efficiently.
-
                             </p>
-
                         </div>
-
                     </div>
 
                     <div class="faq-item">
-
-                        <button class="faq-question">
-
+                        <button class="faq-question" aria-expanded="false">
                             Is NovaAI suitable for startups?
-
+                            <span class="faq-icon">+</span>
                         </button>
-
                         <div class="faq-answer">
-
                             <p>
-
                                 Yes. NovaAI is designed for startups,
                                 agencies, enterprises and remote teams.
-
                             </p>
-
                         </div>
-
                     </div>
 
                     <div class="faq-item">
-
-                        <button class="faq-question">
-
+                        <button class="faq-question" aria-expanded="false">
                             Can I upgrade my plan later?
-
+                            <span class="faq-icon">+</span>
                         </button>
-
                         <div class="faq-answer">
-
                             <p>
-
                                 Absolutely. You can upgrade or downgrade
                                 your subscription at any time.
-
                             </p>
-
                         </div>
-
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
-
-
         <!-- =========================================
-                    CALL TO ACTION
+             CALL TO ACTION
         ========================================== -->
 
-        <section class="cta">
-
+        <section class="cta" aria-labelledby="cta-title">
             <div class="container">
 
-                <h2>
-
-                    Ready To Transform Your Workflow?
-
-                </h2>
-
-                <p>
-
-                    Join thousands of businesses already using
-                    NovaAI Workspace to improve productivity.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="pricing.html"
-                        class="btn-primary">
-
-                        Get Started Free
-
-                    </a>
-
-                    <a
-                        href="contact.html"
-                        class="btn-secondary">
-
-                        Contact Sales
-
-                    </a>
-
+                <div class="cta-content glass-card">
+                    <h2 id="cta-title">
+                        Ready To Transform <span>Your Workflow</span>?
+                    </h2>
+                    <p>
+                        Join thousands of businesses already using
+                        NovaAI Workspace to improve productivity.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="pricing.html" class="btn-primary btn-large">
+                            Get Started Free
+                        </a>
+                        <a href="contact.html" class="btn-secondary btn-large">
+                            Contact Sales
+                        </a>
+                    </div>
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
-
-
-
-
     <!-- =========================================
-                    FOOTER
+         FOOTER
     ========================================== -->
 
-    <footer class="footer">
-
+    <footer class="footer" role="contentinfo">
         <div class="container footer-grid">
 
-            <div>
-
-                <h3 class="logo">
-
-                    Nova<span>AI</span>
-
-                </h3>
-
+            <!-- Brand -->
+            <div class="footer-brand">
+                <h3 class="logo">Nova<span>AI</span></h3>
                 <p>
-
                     AI-powered workspace built for modern
                     professionals and growing teams.
-
                 </p>
-
             </div>
 
+            <!-- Company Links -->
             <div>
-
-                <h4>
-
-                    Company
-
-                </h4>
-
+                <h4>Company</h4>
                 <ul>
-
-                    <li>
-
-                        <a href="about.html">
-
-                            About
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="services.html">
-
-                            Solutions
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="pricing.html">
-
-                            Pricing
-
-                        </a>
-
-                    </li>
-
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Solutions</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
                 </ul>
-
             </div>
 
+            <!-- Support Links -->
             <div>
-
-                <h4>
-
-                    Support
-
-                </h4>
-
+                <h4>Support</h4>
                 <ul>
-
-                    <li>
-
-                        <a href="contact.html">
-
-                            Contact
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#">
-
-                            Documentation
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#">
-
-                            Privacy Policy
-
-                        </a>
-
-                    </li>
-
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
-
             </div>
 
+            <!-- Newsletter -->
             <div>
-
-                <h4>
-
-                    Stay Updated
-
-                </h4>
-
-                <form class="newsletter">
-
-                    <input
-                        type="email"
-                        placeholder="Enter your email">
-
-                    <button
-                        type="submit"
-                        class="btn-primary">
-
-                        Subscribe
-
-                    </button>
-
+                <h4>Stay Updated</h4>
+                <form class="newsletter" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit" class="btn-primary">Subscribe</button>
                 </form>
-
             </div>
 
         </div>
 
         <div class="footer-bottom">
-
             <div class="container">
-
                 <p>
-
-                    © 2026 NovaAI Workspace.
-                    All Rights Reserved.
-
+                    © 2026 NovaAI Workspace. All Rights Reserved.
+                    Built with ❤️ by Syeda Gul Andam Ali Kazmi
                 </p>
-
             </div>
-
         </div>
 
     </footer>
 
-
-
     <!-- =========================================
-                BACK TO TOP BUTTON
+         BACK TO TOP BUTTON
     ========================================== -->
 
-    <button
-        id="backToTop"
-        aria-label="Back To Top">
-
+    <button id="backToTop" aria-label="Back To Top" class="back-to-top">
         ↑
-
     </button>
 
-
-
     <!-- =========================================
-                JAVASCRIPT
+         JAVASCRIPT
     ========================================== -->
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
 
 </body>
 
