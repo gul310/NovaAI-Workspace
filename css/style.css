@@ -1,0 +1,535 @@
+/* ==========================================================
+   NovaAI Workspace
+   Main Stylesheet
+   Version : 1.0
+   Author  : Syeda Gul Andam Ali Kazmi
+   ========================================================== */
+
+
+/* ==========================================================
+   GOOGLE FONTS
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* ==========================================================
+   CSS VARIABLES
+========================================================== */
+
+:root{
+
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+
+    --secondary:#22D3EE;
+
+    --success:#10B981;
+
+    --warning:#F59E0B;
+
+    --danger:#EF4444;
+
+    --dark:#030712;
+
+    --card:#111827;
+
+    --surface:#1F2937;
+
+    --border:#374151;
+
+    --text:#F9FAFB;
+
+    --text-light:#CBD5E1;
+
+    --white:#ffffff;
+
+    --shadow:
+
+    0 10px 30px rgba(0,0,0,.18);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--dark);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+button{
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    border:none;
+
+}
+
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+.container{
+
+    width:min(92%,1200px);
+
+    margin:auto;
+
+}
+
+
+section{
+
+    padding:110px 0;
+
+}
+
+
+.section-header{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+
+.section-header h2{
+
+    font-size:3rem;
+
+    font-family:'Poppins',sans-serif;
+
+    margin:20px 0;
+
+}
+
+
+.section-header p{
+
+    color:var(--text-light);
+
+}
+
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:100px;
+
+    background:rgba(79,70,229,.15);
+
+    color:var(--secondary);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   SKIP LINK
+========================================================== */
+
+.skip-link{
+
+    position:absolute;
+
+    top:-50px;
+
+    left:30px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    z-index:999;
+
+}
+
+
+.skip-link:focus{
+
+    top:20px;
+
+}
+
+
+/* ==========================================================
+   ANNOUNCEMENT BAR
+========================================================== */
+
+.announcement-bar{
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    padding:12px;
+
+    text-align:center;
+
+    font-size:.9rem;
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(3,7,18,.75);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    min-height:80px;
+
+}
+
+
+.logo{
+
+    font-size:1.9rem;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:700;
+
+}
+
+
+.logo span{
+
+    color:var(--secondary);
+
+}
+
+
+.nav-menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+.nav-menu a{
+
+    color:var(--text-light);
+
+    transition:var(--transition);
+
+}
+
+
+.nav-menu a:hover,
+
+.nav-menu .active{
+
+    color:var(--white);
+
+}
+
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+
+/* ==========================================================
+   HAMBURGER
+========================================================== */
+
+.hamburger{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    background:none;
+
+}
+
+
+.hamburger span{
+
+    width:28px;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(circle at top right,
+
+    rgba(79,70,229,.30),
+
+    transparent 40%),
+
+    radial-gradient(circle at left,
+
+    rgba(34,211,238,.15),
+
+    transparent 40%);
+
+}
+
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+
+.hero h1{
+
+    font-size:4.4rem;
+
+    font-family:'Poppins',sans-serif;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+
+.hero p{
+
+    color:var(--text-light);
+
+    max-width:600px;
+
+    margin-bottom:35px;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
