@@ -1,0 +1,85 @@
+# ==========================
+# NovaAI Workspace
+# Git Ignore File
+# ==========================
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Node Modules (Future Projects)
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency Directories
+jspm_packages/
+
+# Package Locks
+package-lock.json
+yarn.lock
+
+# Build Folders
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+
+# Temporary Files
+*.tmp
+*.temp
+
+# IDE Files
+.idea/
+*.iml
+
+# Mac Files
+.AppleDouble
+.LSOverride
+
+# Windows Files
+ehthumbs.db
+Icon?
+
+# Backup Files
+*.bak
+*.backup
+
+# Compressed Files
+*.zip
+*.rar
+
+# Generated Reports
+docs/screenshots/*.png
+docs/screenshots/*.jpg
+
+# Local Configuration
+settings.json
+
+# Sass Cache
+.sass-cache/
+
+# ESLint Cache
+.eslintcache
+
+# Optional Assets
+assets/videos/*.mp4
