@@ -1,0 +1,63 @@
+# ==========================================================
+# robots.txt - NovaAI Workspace
+# Version: 1.0
+# Author: Syeda Gul Andam Ali Kazmi
+# ==========================================================
+
+# ==========================================================
+# ALLOW ALL CRAWLERS
+# ==========================================================
+
+User-agent: *
+Allow: /
+
+# ==========================================================
+# DISALLOW SENSITIVE AREAS
+# ==========================================================
+
+# Admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /config/
+
+# Development and staging
+Disallow: /dev/
+Disallow: /test/
+Disallow: /staging/
+
+# Asset directories (still accessible via CSS/JS)
+Disallow: /assets/images/icons/
+Disallow: /assets/images/patterns/
+
+# Common CMS paths
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /includes/
+
+# ==========================================================
+# BLOCK SPECIFIC USER AGENTS (Prevent spam)
+# ==========================================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# ==========================================================
+# CRAWL DELAY (Respect server resources)
+# ==========================================================
+
+Crawl-delay: 5
+
+# ==========================================================
+# SITEMAP LOCATION
+# ==========================================================
+
+Sitemap: https://github.com/gul310/NovaAI-Workspace/sitemap.xml
