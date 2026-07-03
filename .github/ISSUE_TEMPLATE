@@ -1,0 +1,78 @@
+---
+name: Bug Report
+about: Create a report to help us improve
+title: '[BUG] '
+labels: bug
+assignees: ''
+---
+
+## 🐛 Bug Description
+
+**Describe the bug**
+A clear and concise description of what the bug is.
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Actual behavior**
+A clear and concise description of what actually happened.
+
+---
+
+## 🔄 Steps to Reproduce
+
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+---
+
+## 📸 Screenshots
+
+If applicable, add screenshots to help explain your problem.
+
+---
+
+## 💻 Environment
+
+**Device:**
+- [ ] Desktop
+- [ ] Tablet
+- [ ] Mobile
+
+**Browser:**
+- [ ] Chrome
+- [ ] Firefox
+- [ ] Safari
+- [ ] Edge
+- [ ] Other: _______
+
+**OS:**
+- [ ] Windows
+- [ ] macOS
+- [ ] Linux
+- [ ] iOS
+- [ ] Android
+
+**Screen Size:**
+- [ ] Large ( > 1200px )
+- [ ] Medium ( 768px - 1200px )
+- [ ] Small ( < 768px )
+
+---
+
+## 📋 Additional Context
+
+Add any other context about the problem here.
+
+---
+
+## ✅ Checklist
+
+- [ ] I have searched for similar issues
+- [ ] I have included all relevant information
+- [ ] I have provided steps to reproduce
+- [ ] I have attached screenshots (if applicable)
+
+---
